@@ -17,9 +17,6 @@
 }
 
 body{
-    /*background-image: url("/assets/assets/fundo.png");
-    background-repeat: no-repeat;
-    background-size: cover;*/
     background-color: var(--cor-1);
     color: var(--cor-2);
     box-sizing: border-box;
@@ -71,6 +68,11 @@ body{
 .conteiner_texto{
     font-family: var(--fonte-2);
     justify-content: center;
+}
+.conteiner_texto_1{
+    font-family: var(--fonte-2);
+    justify-content: center;
+    margin:2em 0;
 }
 .apresentaçao__imagen{
     width: 50%;
