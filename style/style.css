@@ -2,15 +2,20 @@
 
 
 :root{
-    --cor-1: #2C3930;
-    --cor-2: #DCD7C9;
-    --cor-3: #A27B5C;
-    --cor-hov: #3F4F44;
+    --cor-1:  #526A5A;   
+    --cor-2: #E0DACB;   
+    --cor-3: #C49A6C;   
+    --cor-hov: #56675D;
 
     --fonte-1: "EB Garamond", serif;
     --fonte-2: "Lora", serif ;
 }
-
+.modo-escuro {
+  --cor-fundo: #1b231e; 
+  --cor-detalhe: #EDE9DF; 
+  --cor-texto: #C49A6C; 
+  --cor-hov: #556B5B; 
+}
 *{
     margin:0;
     padding:0;
@@ -26,6 +31,15 @@ body{
     background-color: var(--cor-1);
     color: var(--cor-2);
     box-sizing: border-box;
+    transition: background-color 0.4s ease, color 0.4s ease;
+}
+body.modo-escuro {
+  background-color: var(--cor-fundo);
+  color: var(--cor-texto);
+}
+body.modo-escuro .tema-btn {
+  background-color: var(--cor-texto);
+  color: var(--cor-fundo);
 }
 .menu{
     
@@ -124,6 +138,31 @@ body{
     width: 100%;
     font-family: var(--fonte-1);
 }
+
+.btnD{
+    margin-left: 95%;
+    padding:0.3%;
+    border-radius: 1em;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: var(--cor-1);
+    color: var(--cor-2);
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    font-size: 22px;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.tema-btn:hover {
+  transform: rotate(20deg) scale(1.1);
+}
+
+
+
 
 @media (max-width: 1200px) {
     .menu{
