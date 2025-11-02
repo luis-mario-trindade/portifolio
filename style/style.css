@@ -19,9 +19,6 @@ html{
 }
 
 body{
-    /*background-image: url("/assets/assets/fundo.png");
-    background-repeat: no-repeat;
-    background-size: cover;*/
     background-color: var(--cor-1);
     color: var(--cor-2);
     box-sizing: border-box;
@@ -32,8 +29,16 @@ body.modo-escuro {
   color: var(--cor-texto);
 }
 body.modo-escuro .tema-btn {
-  background-color: var(--cor-texto);
-  color: var(--cor-fundo);
+  background-color: var(--cor-fundo);
+  color: var(--cor-texto);
+}
+.modo-escuro .menu_home:hover{
+    color:var(--cor-detalhe);
+}
+.modo-escuro .botoes_links_link{
+    background-color: var(--cor-fundo);
+    transition: background-color 0.4s ease, color 0.4s ease;
+
 }
 .modo-escuro {
   --cor-fundo: #1b231e; 
@@ -141,7 +146,7 @@ main{
 }
 
 .botoes_links_link:hover{
-    background-color: var(--cor-hov);
+    background-color: var(--cor-3);
    
 }
 .rodape{
@@ -188,7 +193,7 @@ main{
     text-align: center;
     font-size: 1.5rem;
     margin:0.5em;
-    color: var(--cor-2);
+    color: var(--cor-3);
 }
 
 @media (max-width: 1200px) {
