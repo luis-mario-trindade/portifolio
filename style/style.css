@@ -40,6 +40,16 @@ body.modo-escuro .tema-btn {
     transition: background-color 0.4s ease, color 0.4s ease;
 
 }
+.btnTopo{
+    position:fixed;
+    bottom: 7em;    
+    right: 1.2em;
+    border:solid 2px #000;
+    background-color:var(--cor-1);
+    padding: 0.9em 1em;
+    border-radius: 1.5em;
+    color:#000;
+}
 .modo-escuro {
   --cor-fundo: #1b231e; 
   --cor-detalhe: #EDE9DF; 
@@ -176,6 +186,7 @@ main{
     font-size: 22px;
     cursor: pointer;
     transition: transform 0.3s ease, background-color 0.3s ease;
+    border:solid 2px #000;
 }
 
 .tema-btn:hover {
@@ -194,6 +205,18 @@ main{
     font-size: 1.5rem;
     margin:0.5em;
     color: var(--cor-3);
+    transition: transform 0.3s ease-in-out;
+    object-fit: cover;
+    transition: box-shadow 0.3s ease-in-out;
+}
+.imagens_projeto:hover{
+    transform:scale(1.2em);
+    color:var(--cor-detalhe);
+    transform: scale(0.9);
+    box-shadow: 0 0 30px var(--cor-hov);
+    background-color: var(--cor-hov);
+    border-radius: 1em;
+    
 }
 
 @media (max-width: 1200px) {
