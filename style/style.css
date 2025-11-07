@@ -229,17 +229,9 @@ main{
     padding: 4em;
     font-family: var(--fonte-1);
 }
-.btne{
-    background-color: var(--cor-1);
-    border:2px solid var(--cor-3);
-    text-decoration: none;
-    color: var(--cor-texto);
-    padding: 1em;
-    border-radius: 0.3em;
-    font-size: 1.3em;
-    margin:0.5em;
-    align-items: center;
-    
+.EC{
+    display:inline-flex;
+    margin:1em;
 }
 
 .tituloEC{
