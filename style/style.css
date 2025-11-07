@@ -44,11 +44,11 @@ body.modo-escuro .tema-btn {
     position:fixed;
     bottom: 7em;    
     right: 1.2em;
-    border:solid 2px #000;
+    border:solid 2px var(--cor-3);
     background-color:var(--cor-1);
     padding: 0.9em 1em;
     border-radius: 1.5em;
-    color:#000;
+    color:var(--cor-3);
 }
 .modo-escuro {
   --cor-fundo: #1b231e; 
@@ -186,7 +186,7 @@ main{
     font-size: 22px;
     cursor: pointer;
     transition: transform 0.3s ease, background-color 0.3s ease;
-    border:solid 2px #000;
+    border:solid 2px  var(--cor-3);
 }
 
 .tema-btn:hover {
@@ -196,6 +196,10 @@ main{
     display: flex;
     flex-wrap: wrap;
     
+}
+.proj{
+    font-size: 3em;
+    color: var(--cor-3);
 }
 .imagens_projeto{
     max-width:500px;
@@ -218,7 +222,31 @@ main{
     border-radius: 1em;
     
 }
+.entre_em_contato{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 4em;
+    font-family: var(--fonte-1);
+}
+.btne{
+    background-color: var(--cor-1);
+    border:2px solid var(--cor-3);
+    text-decoration: none;
+    color: var(--cor-texto);
+    padding: 1em;
+    border-radius: 0.3em;
+    font-size: 1.3em;
+    margin:0.5em;
+    align-items: center;
+    
+}
 
+.tituloEC{
+margin: 2em;
+font-size: 2.5em;
+color: var(--cor-3);
+}
 @media (max-width: 1200px) {
     .menu{
         padding: 15%;
